@@ -1,0 +1,88 @@
+/* Otetaan käyttöön google fontti open sans, lisää enismäiselle riville*/
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+html {
+    font-size: 62.5%;
+    /*62.5% x 16 = 10*/
+    /* 2rem = 20px*/
+    /* 1.5rem = 15px*/
+    /* 0.7rem = 7px*/
+}
+body {
+    background-color: #304F4F;
+    border: solid white 1rem;
+    margin: 1rem;
+    padding: 2rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    
+}
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+h5 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+h6 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.nude {
+    color: #CFAE85;
+}
+.green {
+    color: #2FEC2F;
+}
+.strong {
+    color: #1BCECE;
+    padding: 0.5rem;
+    font-weight: 700;
+}
+.marked {
+    color: black;
+    background-color: yellow;
+    padding: 0.5rem;
+    font-weight: 400;
+}
+.italic {
+    font-style: italic;
+
+}
+.small {
+    font-size: small;
+    color: red;
+}
+.overline {
+    text-decoration: line-through;
+}
+.underline {
+    text-decoration: underline;
+    
+}
+.subscript {
+    vertical-align: sub;
+    font-size: smaller;
+}
+.superscript {
+    vertical-align: super;
+    font-size: smaller;
+}
+p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}

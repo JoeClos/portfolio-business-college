@@ -1,0 +1,153 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    background-color: darkcyan;
+    padding: 10px;
+}
+.mobile {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+.tablet {
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+.desktop {
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.wrapper >* {
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+.header {
+    background-color: gold;
+}
+.nav-vanhempi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.nav-vanhempi >* {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    
+}
+.navipalkki{
+    padding: 0;
+}
+.somenavipalkki {
+    text-align: center;
+    margin: 0 -1rem -1rem -1rem;
+}
+
+.some {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.some >* {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1rem;
+}
+.navipalkki li {
+    background-color: #EDEDED;
+    border: solid lightgray 1px;
+    text-align: center;
+}
+.valilyonti {
+    margin-bottom: 1rem;
+}
+.navipalkki {
+    padding: 0;
+}
+.main {
+    background-color: darkorange;
+}
+.aside-1 {
+    background-color: mediumseagreen;
+}
+.aside-2 {
+    background-color: seagreen;
+}
+.footer {
+    background-color: lightgreen;
+}
+.facebook {
+    background-color: #3B5999;
+    color: white;
+}
+.tweeter {
+    background-color: #55ACEF;
+    color: white;
+}
+.email {
+    background-color: #777777;
+    color: white;
+}
+@media only screen and (min-width: 426px) {
+    .wrapper {
+        flex-direction: row;
+    }
+    .aside-1 {
+        flex-basis: auto;
+    }
+    .aside-2 {
+        flex-basis: auto;
+    }
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: inline-block;
+    }
+    .desktop {
+        display: none;
+    }
+    
+  }
+  @media only screen and (min-width: 769px) {
+    .aside-1 {
+        order: 1;
+        flex-basis: 0px;
+    }
+    .main {
+        order: 2;
+        flex-basis: 400px;
+    }
+    .aside-2 {
+        order: 3;
+        flex-basis: 0px;
+    }
+    .footer {
+        order: 4;
+    }
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: inline-block;
+    }
+  }
+  

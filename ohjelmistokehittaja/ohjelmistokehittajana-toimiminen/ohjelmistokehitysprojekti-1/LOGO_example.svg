@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1080 1920" style="enable-background:new 0 0 1080 1920;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#80D6CC;stroke:#000000;stroke-width:12;stroke-miterlimit:10;}
+	.st1{fill:#E8434F;stroke:#000000;stroke-width:12;stroke-miterlimit:10;}
+	.st2{fill:#F2F2F2;stroke:#000000;stroke-width:12;stroke-miterlimit:10;}
+	.st3{fill:#4A586D;stroke:#000000;stroke-width:12;stroke-miterlimit:10;}
+	.st4{font-family:'BookmanOldStyle';}
+	.st5{font-size:82.552px;}
+</style>
+<g id="Taivas">
+	<rect x="195" y="1064" class="st0" width="691" height="399"/>
+</g>
+<g id="Torni">
+	<polygon class="st1" points="429.17,1460.91 466.76,1034.17 466.93,871 617.22,871 614.19,1034.17 651.78,1460.91 	"/>
+	<polygon class="st2" points="461.86,1088.79 466.76,1008 614.19,1008 619.28,1092 	"/>
+	<polyline class="st2" points="466.93,860 466.93,922 576,922 576,860 466.93,860 	"/>
+	<polygon class="st2" points="401.3,1015 673,1018 673,952.34 401.3,947.74 	"/>
+	<line class="st2" x1="466.85" y1="940.74" x2="466.76" y2="1008"/>
+	<line class="st2" x1="615.86" y1="944.37" x2="614.63" y2="1010.36"/>
+	<path class="st1" d="M466.76,948.85"/>
+	<polygon class="st1" points="466.76,1018 615.86,1020.4 614.63,951.35 466.76,951.35 	"/>
+	<path class="st2" d="M398.19,1015.4c7.62,6.63,19.16,15.1,34.81,21.6c10.52,4.37,20.17,6.71,28,8"/>
+	<path class="st2" d="M675,1020c-5.43,4.49-12.4,9.48-21,14c-13.2,6.95-25.46,10.29-34.6,12"/>
+</g>
+<g id="Valkoiset_laatikot">
+</g>
+<g id="Katto">
+	<polygon class="st1" points="428.29,871 539.98,791.71 651.67,871 	"/>
+	<circle class="st1" cx="540.5" cy="762.5" r="28.5"/>
+	<line class="st1" x1="539.98" y1="682" x2="539.98" y2="729.85"/>
+</g>
+<g id="Maa">
+	<path class="st3" d="M202,1462.68c3.87-9.38,18.88-42.5,56.68-62.51c40.97-21.69,80.01-12.79,89.14-10.45
+		c3.41-6.3,64.62-114.75,189.76-121.66c87.09-4.81,170.25,41.48,213.81,118.92c8.82-1.72,43.74-7.45,79.76,13.19
+		c36.24,20.77,48.91,54.07,51.85,62.51C656,1462.68,429,1462.68,202,1462.68z"/>
+</g>
+<g id="Firman_logo">
+	<text transform="matrix(1 0 0 1 191 1554.0645)" class="st4 st5">NORTH BEACON</text>
+	<polygon class="st2" points="630.84,1240.15 630.66,1238.1 624.26,1165.55 456.68,1165.55 450.11,1240.15 	"/>
+</g>
+</svg>

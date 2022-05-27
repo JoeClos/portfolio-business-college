@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myCar = new Object();
+        myCar.make = 'Ford';
+        myCar.model = 'Mustang';
+        myCar.year = 1969; 
+
+        var propertyName = 'make';
+        myCar[propertyName] = 'Ford';
+
+        propertyName = 'model';
+        myCar[propertyName] = 'Mustang';
+
+        function Car(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        }
+        var mycar = new Car('Eagle', 'Talon TSi', 1993);
+        var kenscar = new Car('Nissan', '300ZX', 1992);
+        var vpgscar = new Car('Mazda', 'Miata', 1990);
+
+        function Person(name, age, sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        }
+
+        var rand = new Person('Rand McKinnon', 33, 'M');
+        var ken = new Person('Ken Jones', 39, 'M');
+
+        function Car(make, model, year, owner) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.owner = owner;
+        }
+
+        var car1 = new Car('Eagle', 'Talon TSi', 1993, rand);
+        var car2 = new Car('Nissan', '300ZX', 1992, ken);
+
+        Person.maritalStatus = "married";
+
+        // Animal properties and method encapsulation
+        var Animal = {
+        type: 'Invertebrates', // Default value of properties
+        displayType: function() {  // Method which will display type of Animal
+            console.log(this.type);
+        }
+        };
+
+        // Create new animal type called animal1
+        var animal1 = Object.create(Animal);
+        animal1.displayType(); // Output:Invertebrates
+
+        // Create new animal type called Fishes
+        var fish = Object.create(Animal);
+        fish.type = 'Fishes';
+        fish.displayType(); // Output:Fishes
+
+        function displayCar() {
+        var result = `A Beautiful ${this.year} ${this.make} ${this.model}`;
+        pretty_print(result);
+        }
+
+        this.displayCar = displayCar;
+
+        function Car(make, model, year, owner) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.owner = owner;
+        this.displayCar = displayCar;
+        }
+
+        car1.displayCar();
+        
+        
+        
+        const Manager = {
+        name: "John",
+        age: 27,
+        job: "Software Engineer"
+        }
+        const Intern = {
+        name: "Ben",
+        age: 21,
+        job: "Software Engineer Intern"
+        }
+
+        function sayHi() {
+            console.log('Hello, my name is', this.name)
+        }
+
+        // add sayHi function to both objects
+        Manager.sayHi = sayHi;
+        Intern.sayHi = sayHi;
+
+        Manager.sayHi() // Hello, my name is John'
+        Intern.sayHi() // Hello, my name is Ben'
+        
+        function howOldAmI (){
+        console.log('I am ' + this.age + ' years old.')
+        }
+        Manager.howOldAmI = howOldAmI;
+        Manager.howOldAmI() // I am 27 years old.
+
+        //Getters and setters
+
+        var o = {
+        a: 7,
+        get b() {
+            return this.a + 1;
+        },
+        set c(x) {
+            this.a = x / 2;
+        }
+        };
+
+        console.log(o.a); // 7
+        console.log(o.b); // 8 <-- At this point the get b() method is initiated.
+        o.c = 50;         //   <-- At this point the set c(x) method is initiated
+        console.log(o.a); // 25
+
+
+
+
+
+
+    </script>
+</body>
+</html>

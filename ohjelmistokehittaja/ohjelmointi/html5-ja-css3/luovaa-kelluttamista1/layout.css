@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Koh Santepheap", cursive;
+  box-sizing: border-box;
+  display: flex;
+}
+
+img {
+  padding: 5px;
+  background-color: white;
+  border-left: solid 1px lightgrey;
+  border-top: solid 1px lightgrey;
+  border-right: solid 1px darkgrey;
+  border-bottom: solid 1px darkgrey;
+  box-shadow: 3px 3px darkgrey;
+  max-width: 100%;
+}
+/*Making the web-page using float*/
+
+.container {
+  box-sizing: border-box;
+  margin:3px; 
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: gainsboro;
+  background-image: linear-gradient(
+    180deg, gainsboro, white);
+  padding: 1em;
+}
+
+
+.heading {
+  float: right;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-variant-caps: petite-caps;
+  margin-bottom: 5px;
+}
+p {
+  font-size: 1.4rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.image {
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.text { 
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  font-size: 0;
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+
+.reverse .heading {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+.reverse .text {
+  box-sizing: border-box;
+  float: right;
+  width: 70%;
+  padding-right: 10px;
+}
+.reverse .image {
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
+  
+}
+
+
+/*Making the web-page using grid*/
+/*
+article {
+  display: block;
+  border: 1px solid black;
+  margin: 5px;
+}
+.container .clearfix {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 98px 162px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "image heading"
+    "image text";
+}
+
+.image {
+  grid-area: image;
+  grid-row: 1 / span 2;
+}
+.heading {
+  grid-area: heading;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: black;
+  font-variant-caps: petite-caps;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.text {
+  grid-area: text;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  color: black;
+  text-align: justify;
+  margin-left: 5px;
+}
+
+.clearfix .reverse {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 162px 98px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "heading image"
+    "text image";
+}
+
+.reverse .image {
+  padding-left: 8px;  
+}
+*/
+
+@media only screen and (max-width: 425px) {
+  body {
+    margin: 0;
+  }
+
+  .container {
+    margin: 0 0 1rem 0;
+    width: 100%;
+    min-width: 320px;
+    padding: 10px;
+  }
+  h1 {
+    margin-left: 10px;
+  }
+
+  p {
+    margin-left: 1rem;
+  }
+}

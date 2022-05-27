@@ -1,0 +1,121 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.2rem;
+}
+
+body > * {
+  padding: 1rem;
+}
+
+#page {
+  grid-template-areas:
+    "head head"
+    "nav main"
+    "nav foot";
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
+
+#page > * {
+  padding: 1rem;
+}
+
+#page > header {
+  grid-area: head;
+  background-color: lightblue;
+}
+
+#page > nav {
+  grid-area: nav;
+  background-color: lightsalmon;
+}
+
+#page > main {
+  grid-area: main;
+  background-color: yellow;
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: lightgreen;
+}
+
+/*soveltava tehtävän säänöt*/
+
+/* Coca Cola Brand Colors */
+
+
+#page .red-bg {
+  background-color: #f40000;
+}
+
+#page .red-font {
+  color: #f40000;
+}
+
+#page .black-bg {
+  background-color: black;
+}
+
+#page .black-font {
+  color: black;
+}
+
+#page .white-bg {
+  background-color: white;
+}
+
+.white-bg ul li {
+  font-size: 1.8rem;
+  font-variant-caps: all-petite-caps;
+  padding: 8px;
+}
+
+#page .white-font {
+  color: white;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+#page {
+  grid-template-rows: 1fr 1fr 30px;
+}
+
+#page > * {
+  margin: 0.5rem;
+  padding: 0;
+}
+
+#page footer {
+  padding-bottom: 12rem;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+.logo {
+  margin: 1rem;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.white-font a {
+  color: white;
+}
+
+.right{
+  float: right;
+}

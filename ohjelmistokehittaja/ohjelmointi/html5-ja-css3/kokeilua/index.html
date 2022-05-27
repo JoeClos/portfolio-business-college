@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--määritellään merkkivalikoima utf-8 eli ääkköset näkyvät oikein html-sivulla -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokeilua</title>
+    <!-- Lisätään CSS-säännot style-tagin sisään head-osan loppuun -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #special {
+            background-color: #008000;
+            color: white;
+            font-size: 30px;
+            padding: 80px;
+
+        }
+
+        .muotoiltu {
+            background-color: #D3D3D3;
+            padding: 10px;
+
+        }
+        /* Sivun kuvat responsiivisiksi*/
+        figure {
+            display: block;
+        }
+
+        figure img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Tämä on sivun tärkein otsikko</h1>
+        <p id="special">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur architecto
+            officiis molestias quod corrupti sint qui pariatur, natus asperiores nulla optio rerum! Minus fugiat
+            eligendi sed commodi aut impedit!</p>
+        <a href="images/html-tag.png" target="_blank" rel="noopener noreferrer">
+            <!-- Kuva responsiiviseski, img-tag pitää olla figure-tagin sisällä -->
+            <figure>
+                <img src="images/html-tag.png" alt="cat is very grumpy">
+            </figure>
+        </a>
+        <p class="muotoiltu">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur architecto
+            officiis molestias quod corrupti sint qui pariatur, natus asperiores nulla optio rerum! Minus fugiat
+            eligendi sed commodi aut impedit!</p>
+        <p class="muotoiltu">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur architecto
+            officiis molestias quod corrupti sint qui pariatur, natus asperiores nulla optio rerum! Minus fugiat
+            eligendi sed commodi aut impedit!</p>
+
+    </main>
+    <footer>
+        <p>2021 &#169; Josephine Closan</p>
+    </footer>
+</body>
+
+</html>

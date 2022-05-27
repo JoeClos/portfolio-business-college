@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap');
+
+/*Tämä web-sivu on rakennettu mobile first*/
+/*Kaikkien muiden html-tagien rem pohjafonttikoko määritellään html-tagissä, 6205% x 16px = 10px*/
+html {
+  /* 62.5% x 16px = 10px */
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.sisennys {
+  font-size: 2.4rem;
+  text-align: center;
+  color: #69013B;
+}
+/*Muotoillaan kuvaesitys flexin avulla */
+/*Mobiilinäkyvän kuvat allekain koko näytön leveydellä*/
+.selfie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.selfie>* {
+  flex-grow: 1;
+  flex-basis: 100%;
+  order: 2;
+  border: solid white 1rem;
+  margin-bottom: 1rem;
+}
+
+
+/*Tablet-näkymän CSS-säännot*/
+@media only screen and (min-width: 426px) {
+  body {
+    /* background-color: lightblue; */
+  }
+  h2 {
+    margin-top: 1rem;
+
+  }
+
+  .selfie>* {
+    flex-basis: 40%;
+    margin: 0.5rem;
+  }
+  
+}
+/*Laptop ja sitä suurempien näkymien CSS-säännot*/
+@media only screen and (min-width: 769px) {
+  body {
+    /* background-color: salmon */
+  }
+/*Laptop näkyvässä lähtien 4 kuvaa rinnäkkäin*/
+  .selfie>* {
+    flex-basis: 21%;
+    margin: 0.5rem;
+  }
+}
